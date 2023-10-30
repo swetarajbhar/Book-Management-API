@@ -52,16 +52,16 @@ Before running the application, make sure to configure your MongoDB connection s
 2. You can modify your .env file to include your MongoDB credentials and config parameters as follows:
 
    ```
-   `NODE_ENV=development
-    CONFIG=development
-    PORT=10011
+   NODE_ENV=development
+   CONFIG=development
+   PORT=10011
 
-    # DB CREDS
-    MONGO_HOST=HOST
-    MONGO_USERNAME=USERNAME
-    MONGO_PASSWORD=PASSWORD
-    MONGO_PORT=27017
-    MONGO_DBNAME=DBNAME
+   # DB CREDS
+   MONGO_HOST=HOST
+   MONGO_USERNAME=USERNAME
+   MONGO_PASSWORD=PASSWORD
+   MONGO_PORT=27017
+   MONGO_DBNAME=DBNAME
    ```
 
    Replace `HOST,USERNAME,PASSWORD,DBNAME` with your MongoDB connection parameters.
