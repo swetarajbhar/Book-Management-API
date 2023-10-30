@@ -132,6 +132,29 @@ DELETE http://localhost:10011/books/v1/delete/653f635f47f3ecb1a5c01ad5
 
 ## Deployment Instructions
 
+- The APIs are deployed on Render. Below is the Base URL. 
+
+   ```bash
+   https://book-management-api-1r15.onrender.com
+   ```
+
+
+## Steps for Deployment
+- You will need a free account on Render to get started. After you have registered with your preferred method, such as Github or Email, please follow the steps below to run your Node.js app on Render:
+
+- Log in to your Render account.
+
+- On the Dashboard, under "Web Services," click "New Web Service."
+
+- Next, paste the following URL in the provided field: https://github.com/swetarajbhar/Book-Management-API and click "Continue."
+
+- On the next page, enter "book-management-api" as the Name of the app, and select the Environment as "Node."
+
+- Make sure the build command is set to npm install, and the start command is set to npm run start. Also, ensure that the plan is set to "Free." Add the appropriate environment variables required for the Node.js application under Advanced Settings. Then, click the blue button at the end of the page, which says "Create Web Service."
+
+- The application's URL will be visible under the name of the app. Click it to check if your app is running. If you click the app while it is being deployed for the first time, it may return a 404 response. It will take some time to become operational. You can check by visiting <YOUR-APP-URL>.
+
+
 ## Decisions and Assumptions
 
 - The API assumes that MongoDB is set up and running, and the connection parameters is configured in the `.env` file.
