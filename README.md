@@ -152,7 +152,7 @@ DELETE http://localhost:10011/books/v1/delete/653f635f47f3ecb1a5c01ad5
 
 - Make sure the build command is set to npm install, and the start command is set to npm run start. Also, ensure that the plan is set to "Free." Add the appropriate environment variables required for the Node.js application under Advanced Settings. Then, click the blue button at the end of the page, which says "Create Web Service."
 
-- The application's URL will be visible under the name of the app. Click it to check if your app is running. If you click the app while it is being deployed for the first time, it may return a 404 response. It will take some time to become operational. You can check by visiting <YOUR-APP-URL>.
+- The application's URL will be visible under the name of the app. Click it to check if your app is running. If you click the app while it is being deployed for the first time, it may return a 404 response. It will take some time to become operational. You can check by visiting '<YOUR-APP-URL>'.
 
 
 ## Decisions and Assumptions
