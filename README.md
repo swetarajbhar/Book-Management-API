@@ -76,8 +76,6 @@ Before running the application, make sure to configure your MongoDB connection s
 
    The API should now be running on `http://localhost:10011`.
 
-2. You can test the API endpoints using tools like [Postman](https://www.postman.com/) or [curl](https://curl.se/).
-
 ## API Endpoints and Usage
 
 The following endpoints are available:
