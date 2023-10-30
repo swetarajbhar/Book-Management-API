@@ -3,8 +3,7 @@ const timeout = require("connect-timeout");
 const cors = require("cors");
 var bodyParser = require("body-parser");
 
-// const authRoute = require("./apis/src/v1/routes/auth/index");
-// const taskRoute = require("./apis/src/v1/routes/task/index");
+const booksRoute = require("./apis/src/v1/routes/books/index");
 
 const { bootstrap: initializeMongo } = require("./config/components/mongo");
 
@@ -24,12 +23,7 @@ app.use(cors());
 initializeMongo();
 
 // custom routes for business logic to be placed below.
-// app.use("/auth", authRoute);
-// app.use("/task", taskRoute);
-// app.use("/api/v1/transcribe/", transcribeRoute);
-// app.use("/api/v1/user/", userRoute);
-// app.use("/api/v1/language/", languageRoute);
-// app.use("/api/v1/translate/", translateRoute);
+app.use("/books", booksRoute);
 
 // middleware to check timeout
 app.use(haltOnTimedout);
